@@ -8,5 +8,11 @@
     "dev": "next",
     "build": "next build",
     "start": "next start"
-  }
+  },
+  "name": "annouce_technical_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wipcamp/annouce_technical_challenge.git",
+  "author": "mild20091931 <mild20091931@gmail.com>",
+  "license": "MIT"
 }
