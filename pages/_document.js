@@ -13,10 +13,10 @@ export default class MyDocument extends Document {
       <html>
         <Head>
         <title>Flashlight</title>
+          <link rel="stylesheet" type="text/css" href="static/style.css" />
           <script src="static/EQCSS-polyfills.min.js" />
           <script src="static/EQCSS.min.js" />
           <script src="static/script.js" />
-          <link rel="stylesheet" type="text/css" href="static/style.css" />
         </Head>
         <body className="custom_class">
           {this.props.customValue}

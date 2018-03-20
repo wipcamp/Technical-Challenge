@@ -14,7 +14,7 @@
   background: radial-gradient(
     circle 10vmax at var(--cursorX) var(--cursorY),
     rgba(219, 13, 13, 0) 0%,
-    rgba(231, 179, 7, 0.5) 80%,
+    rgba(71, 71, 68, 0.5) 40%,
     rgba(0, 0, 0, 0.95) 100%
   )
 }
