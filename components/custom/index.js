@@ -7,47 +7,43 @@ const Box = styled.div`
 `
 
 export default class Custom extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-          fullName:""
-        }
+      state = {
+        text:[]
       }
-      handleFullNameChange = (e) => {
-        this.setState({
-          fullName: e.target.value
-        })
-      }
-      handleSubmit = (e) => {
-        e.preventDefault();
-      }
+    
+  handleFullNameChange = (e) => {
+    this.setState({
+      text: e.target.value
+    })
+  }
 
-    render() {
-        return (
-            <div>
-        <form onSubmit={this.handleSubmit}>
-          <label htmlFor="fullName">Full Name</label>
-            <input
-              type="text"
-              value={this.state.fullName}
-              onChange={this.handleFullNameChange}
-              name="fullName" />
-          <input type="submit" value="Submit" />
-          
-        </form>
-        {console.log(this.state.fullName)}
-        <div>
-            {this.state.fullName}
+  changeToToDo = (e) => {
+    this.state.handleFullNameChange
+  }
+
+
+  render() {
+    return (
+      <div>
+          Input
+          <input type="text" value={this.state.text} onChange={this.handleFullNameChange}/>
+          <button type="submit" value="Submit" onClick={this.changeToToDo}>submit</button>
+        <Box>
+          {console.log(this.changeToToDo)}
+        {console.log(this.state.text)}
+          <div>
+            {this.state.text}
+          </div>
+        </Box>
+    {/* <div>{fullName.map((data,i)=>(
+        <div key={i}>
+            <h1 dangerouslySetInnerHTML={{__html: data.q}}/>
         </div>
-        {/* <div>{fullName.map((data,i)=>(
-            <div key={i}>
-                <h1 dangerouslySetInnerHTML={{__html: data.q}}/>
-            </div>
-            
-         ))}
         
-        </div> */}
-      </div>
-        )
-    }
+      ))}
+    
+    </div> */}
+  </div>
+    )
+  }
 }
