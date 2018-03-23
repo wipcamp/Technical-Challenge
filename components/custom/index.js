@@ -3,12 +3,12 @@ import styled from 'styled-components'
 
 const Box = styled.div`
     border: 2px solid #000;
-
 `
 
 export default class Custom extends React.Component {
       state = {
-        text:[]
+        text:"",
+        todo:[]
       }
     
   handleFullNameChange = (e) => {
@@ -18,7 +18,10 @@ export default class Custom extends React.Component {
   }
 
   changeToToDo = (e) => {
-    this.state.handleFullNameChange
+    this.state.todo.push(this.state.text)
+    this.setState({
+      text : ""
+    })
   }
 
 
@@ -30,19 +33,19 @@ export default class Custom extends React.Component {
           <button type="submit" value="Submit" onClick={this.changeToToDo}>submit</button>
         <Box>
           {console.log(this.changeToToDo)}
-        {console.log(this.state.text)}
+          {console.log(this.state.text)}
+          
           <div>
-            {this.state.text}
+            {/* {this.state.} */}
           </div>
         </Box>
-    {/* <div>{fullName.map((data,i)=>(
+    <div>
+      {this.state.todo.map((data,i)=>(
         <div key={i}>
-            <h1 dangerouslySetInnerHTML={{__html: data.q}}/>
+            <h1 dangerouslySetInnerHTML={{__html: data}}/>
         </div>
-        
-      ))}
-    
-    </div> */}
+      ))}    
+    </div>
   </div>
     )
   }
