@@ -1,4 +1,4 @@
-/* Flashlight Overlay */
+/* Flashlight Overlay
 :root {
   cursor: none;
   --cursorX: 50vw;
@@ -17,4 +17,8 @@
     rgba(71, 71, 68, 0.5) 40%,
     rgba(0, 0, 0, 0.95) 100%
   )
+} */
+body{
+  overflow-x: hidden;
+  background-color: red;
 }
