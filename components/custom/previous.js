@@ -4,15 +4,16 @@ import Bg from '../custom/Bg';
 
 const H1 = styled.h1`
     text-align: center;
-    color:white;
+    color:#fff;
 `
 const P = styled.p`
 color:white;
 `
 
-const Bg1 = styled(Bg) `
+const Bg1 = styled(Bg)`
   height:130vh;
   color:white;
+  background-color:#000;
 `
 const Name = [
   { id: 0, name: "wip1", lastname: "t", confirm: "ยืนยันสิทธ์" },
@@ -37,9 +38,6 @@ const Name = [
   // { id: 20, name: "wip20", lastname: "dark",confirm:"ยืนยันสิทธ์"},
 ]
 
-const Img = styled.img`
-  width:100%;
-`
 export default class Previous extends React.Component {
   state = {}
   render() {
@@ -60,7 +58,7 @@ export default class Previous extends React.Component {
                     </tr>
                   </tbody>
                 )
-              }
+              } 
             </table>
             {/* <table className="table table-hover table-dark">
                 <tbody>
@@ -75,7 +73,7 @@ export default class Previous extends React.Component {
           </div>
           <div className="col"></div>
         </div>
-        <Img src="/static/img/open.png"/>
+      
       </Bg1>
 
 
