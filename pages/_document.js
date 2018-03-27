@@ -1,26 +1,24 @@
 import Document, { Head, Main, NextScript } from 'next/document'
-import flush from 'styled-jsx/server'
+import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const { html, head, errorHtml, chunks } = renderPage()
-    const styles = flush()
-    return { html, head, errorHtml, chunks, styles }
+  static getInitialProps ({ renderPage }) {
+    const sheet = new ServerStyleSheet()
+    const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))
+    const styleTags = sheet.getStyleElement()
+    return { ...page, styleTags }
   }
 
-  render() {
+  render () {
     return (
       <html>
         <Head>
-        <title>Flashlight</title>
-          {/* <link rel="stylesheet" type="text/css" href="/static/style.css" /> */}
+          <title>Flashlight</title>
           <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css"/>
-          {/* <script src="static/EQCSS-polyfills.min.js" />
-          <script src="static/EQCSS.min.js" />
-          <script src="static/script.js" /> */}
+          {this.props.styleTags}
         </Head>
         <body className="custom_class">
-          {this.props.customValue}
+        {this.props.customValue}
           <Main />
           <NextScript />
         </body>
