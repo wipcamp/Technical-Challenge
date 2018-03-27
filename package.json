@@ -15,5 +15,8 @@
   "main": "index.js",
   "repository": "https://github.com/wipcamp/annouce_technical_challenge.git",
   "author": "mild20091931 <mild20091931@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.5.1"
+  }
 }
