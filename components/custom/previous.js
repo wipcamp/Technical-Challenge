@@ -7,13 +7,14 @@ const H1 = styled.h1`
     color:white;
 `
 const P = styled.p`
-color:white;
+    color:white;
 `
 
 const Bg1 = Bg.extend`
   height:130vh;
   color:white;
   background-color: #171611;
+  overflow: hidden;
 `
 const BgLeft = styled.img`
     position : absolute;
@@ -28,6 +29,13 @@ const BgRight = styled.img`
   height: 130vh;
   right: 0vw;
   bottom : -230vh;
+`
+const BgCenter = styled.img`
+  position : absolute;
+  z-index: 2;
+  width : 100%;
+  left : 0%;
+  bottom: -230vh;
 `
 const Table = styled.div`
     z-index: 3;
@@ -63,6 +71,7 @@ export default class Previous extends React.Component {
       <Bg1 className="container-fulid">
         <BgLeft src='/static/img/Bgleft.png'/>
         <BgRight src='/static/img/BgRight.png'/>
+        <BgCenter src='/static/img/BgCenter.png'/>
         <Table className="row">
           <div className="col"></div>
           <div className="col-8">
