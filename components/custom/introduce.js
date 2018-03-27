@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import Bg from '../custom/Bg'
+import React from 'react';
+import styled from 'styled-components';
+import Bg from '../custom/Bg';
 
 export default class Introduce extends React.Component {
   state = {}

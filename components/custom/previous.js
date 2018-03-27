@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import Bg from '../custom/Bg'
+import React from 'react';
+import styled from 'styled-components';
+import Bg from '../custom/Bg';
 
 export default class Previous extends React.Component {
   state = {}
