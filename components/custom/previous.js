@@ -10,9 +10,29 @@ const P = styled.p`
 color:white;
 `
 
-const Bg1 = styled(Bg)`
+const Bg1 = Bg.extend`
   height:130vh;
   color:white;
+  background-color: #171611;
+`
+const BgLeft = styled.img`
+    position : absolute;
+    z-index:1;
+    height: 130vh;
+    left: -1vw;
+    bottom : -230vh;
+`
+const BgRight = styled.img`
+  position : absolute;
+  z-index:1;
+  height: 130vh;
+  right: 0vw;
+  bottom : -230vh;
+`
+const Table = styled.div`
+    z-index: 3;
+    width: 60vw;
+    margin-left: 20vw;
 `
 const Name = [
   { id: 0, name: "wip1", lastname: "t",confirm:"ยืนยันสิทธ์"},
@@ -41,7 +61,9 @@ export default class Previous extends React.Component {
   render() {
     return (
       <Bg1 className="container-fulid">
-        <div className="row">
+        <BgLeft src='/static/img/Bgleft.png'/>
+        <BgRight src='/static/img/BgRight.png'/>
+        <Table className="row">
           <div className="col"></div>
           <div className="col-8">
             <H1>เอาหล่ะ ... มาลุ้นกัน !!!</H1>
@@ -70,7 +92,7 @@ export default class Previous extends React.Component {
               </table> */}
                     </div>
             <div className="col"></div>
-          </div>
+          </Table>
             </Bg1>
 
             
