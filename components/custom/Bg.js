@@ -8,6 +8,7 @@ const Bg = styled.section`
   background-size: cover;
   letter-spacing: 0.05em;
   overflow-x: hidden;
-  min-height:100vh;
+  overflow-y: hidden;
+  height:100vh;
 `
 export default Bg
