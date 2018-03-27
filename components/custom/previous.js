@@ -10,21 +10,21 @@ const P = styled.p`
 color:white;
 `
 
-const Bg1 = styled(Bg)`
+const Bg1 = styled(Bg) `
   height:130vh;
   color:white;
 `
 const Name = [
-  { id: 0, name: "wip1", lastname: "t",confirm:"ยืนยันสิทธ์"},
-  { id: 1, name: "wip2", lastname: "t",confirm:"ยืนยันสิทธ์"},
-  { id: 2, name: "wip3", lastname: "tt",confirm:"ยืนยันสิทธ์"},
-  { id: 4, name: "wip4", lastname: "tk",confirm:"ยืนยันสิทธ์"},
-  { id: 5, name: "wip5", lastname: "tark",confirm:"ยืนยันสิทธ์"},
-  { id: 6, name: "wip6", lastname: "dark",confirm:"ยืนยันสิทธ์"},
-  { id: 7, name: "wip7", lastname: "tadark",confirm:"ยืนยันสิทธ์"},
-  { id: 8, name: "wip8", lastname: "t",confirm:"ยืนยันสิทธ์"},
-  { id: 9, name: "wip9", lastname: "t",confirm:"ยืนยันสิทธ์"},
-  { id: 10,name: "wip10", lastname: "tt",confirm:"ยืนยันสิทธ์"},
+  { id: 0, name: "wip1", lastname: "t", confirm: "ยืนยันสิทธ์" },
+  { id: 1, name: "wip2", lastname: "t", confirm: "ยืนยันสิทธ์" },
+  { id: 2, name: "wip3", lastname: "tt", confirm: "ยืนยันสิทธ์" },
+  { id: 4, name: "wip4", lastname: "tk", confirm: "ยืนยันสิทธ์" },
+  { id: 5, name: "wip5", lastname: "tark", confirm: "ยืนยันสิทธ์" },
+  { id: 6, name: "wip6", lastname: "dark", confirm: "ยืนยันสิทธ์" },
+  { id: 7, name: "wip7", lastname: "tadark", confirm: "ยืนยันสิทธ์" },
+  { id: 8, name: "wip8", lastname: "t", confirm: "ยืนยันสิทธ์" },
+  { id: 9, name: "wip9", lastname: "t", confirm: "ยืนยันสิทธ์" },
+  { id: 10, name: "wip10", lastname: "tt", confirm: "ยืนยันสิทธ์" },
   // { id: 11, name: "wip11", lastname: "tk",confirm:"ยืนยันสิทธ์"},
   // { id: 12, name: "wip12", lastname: "tark",confirm:"ยืนยันสิทธ์"},
   // { id: 13, name: "wip13", lastname: "dark",confirm:"ยืนยันสิทธ์"},
@@ -36,6 +36,10 @@ const Name = [
   // { id: 19, name: "wip19", lastname: "tark",confirm:"ยืนยันสิทธ์"},
   // { id: 20, name: "wip20", lastname: "dark",confirm:"ยืนยันสิทธ์"},
 ]
+
+const Img = styled.img`
+  width:100%;
+`
 export default class Previous extends React.Component {
   state = {}
   render() {
@@ -46,19 +50,19 @@ export default class Previous extends React.Component {
           <div className="col-8">
             <H1>เอาหล่ะ ... มาลุ้นกัน !!!</H1>
             <table className="table table-hover thead-light">
-            {
-              Name.map((data,i)=>
-              <tbody>
-                <tr>
-                    <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
-                    <td>{data.name}</td>
-                    <td>{data.lastname}</td>
-                </tr>
-              </tbody>
-              )
-            }
+              {
+                Name.map((data, i) =>
+                  <tbody>
+                    <tr>
+                      <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
+                      <td>{data.name}</td>
+                      <td>{data.lastname}</td>
+                    </tr>
+                  </tbody>
+                )
+              }
             </table>
-                    {/* <table className="table table-hover table-dark">
+            {/* <table className="table table-hover table-dark">
                 <tbody>
                   <tr>
                     <th scope="col">ยืนยันสิทธิ์</th>
@@ -68,12 +72,13 @@ export default class Previous extends React.Component {
                   </tr>
                 </tbody>
               </table> */}
-                    </div>
-            <div className="col"></div>
           </div>
-            </Bg1>
+          <div className="col"></div>
+        </div>
+        <Img src="/static/img/open.png"/>
+      </Bg1>
 
-            
-        )
-    }
+
+    )
+  }
 }
