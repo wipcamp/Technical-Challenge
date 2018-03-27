@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Bg = styled.section`
-  background-color:#F8F8FF;
+  background-image: url("/static/img/bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;

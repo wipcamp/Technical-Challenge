@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import Bg from '../custom/Bg';
 
-const P = styled.h1`
+const H1 = styled.h1`
     text-align: center;
+    color:white;
+`
+const P = styled.p`
+color:white;
 `
 
 const Bg1 = styled(Bg)`
   height:130vh;
+  color:white;
 `
 const Name = [
   { id: 0, name: "wip1", lastname: "t",confirm:"ยืนยันสิทธ์"},
@@ -39,7 +44,7 @@ export default class Previous extends React.Component {
         <div className="row">
           <div className="col"></div>
           <div className="col-8">
-            <P>เอาหล่ะ ... มาลุ้นกัน !!!</P>
+            <H1>เอาหล่ะ ... มาลุ้นกัน !!!</H1>
             <table className="table table-hover thead-light">
             {
               Name.map((data,i)=>
