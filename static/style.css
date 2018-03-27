@@ -22,3 +22,6 @@ body{
   overflow-x: hidden;
   background-color: red;
 }
+table{
+  border: 1px solid white;
+}

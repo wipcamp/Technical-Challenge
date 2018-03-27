@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
       <html>
         <Head>
         <title>Flashlight</title>
-          {/* <link rel="stylesheet" type="text/css" href="/static/style.css" /> */}
+          <link rel="stylesheet" type="text/css" href="/static/style.css" />
           <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css"/>
           {/* <script src="static/EQCSS-polyfills.min.js" />
           <script src="static/EQCSS.min.js" />

@@ -10,5 +10,5 @@ const Bg = styled.section`
   overflow-x: hidden;
   overflow-y: hidden;
   height:100vh;
-`
+`;
 export default Bg

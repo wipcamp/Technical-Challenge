@@ -18,7 +18,11 @@ export default class Previous extends React.Component {
             <Bg className="container-fulid">
                 <div className="row">
                     <div className="col-12">
-                        {/* <Img src="/static/img/todfire1.png" className="" /> */}
+                        <table>
+                            <tr>
+                                <th>ยืนยันสิทธิ์</th>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </Bg>
