@@ -7,6 +7,8 @@ const Box = styled.div`
     background-color: #fff;
     position: absolute;
     z-index: 0;
+    border-radius: 20px;
+    padding: 10px;
 `
 
 const index = (props) => (
