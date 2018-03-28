@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Bg from '../custom/Bg';
+import Background from '../custom/Background'
 
 const H1 = styled.h1`
     text-align: center;
@@ -17,7 +18,17 @@ const Bg1 = styled(Bg)`
 `
 const Bg2 = styled.div`
   height: 100vh;
-  background-color: #0ff;
+  background-color: #171611;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+`
+const BgLeft = styled.img`
+
+`
+const Div = styled.div`
+  position: relative;
+  z-index: 3;
 `
 
 const Name = [
@@ -86,7 +97,8 @@ export default class Previous extends React.Component {
       // </Bg1>
 
       <Bg2>
-        <div className="row d-flex justify-content-center">
+        <Background/>
+        <Div className="row d-flex justify-content-center">
           <div className="col-8 ">  
             <table className="table table-hover thead-light">
                {
@@ -102,7 +114,7 @@ export default class Previous extends React.Component {
                } 
            </table>
           </div>  
-        </div>
+        </Div>
       </Bg2>
     )
   }
