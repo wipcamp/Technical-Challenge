@@ -15,6 +15,11 @@ const Bg1 = styled(Bg)`
   color:white;
   background-color:#000;
 `
+const Bg2 = styled.div`
+  height: 100vh;
+  background-color: #0ff;
+`
+
 const Name = [
   { id: 0, name: "wip1", lastname: "t", confirm: "ยืนยันสิทธ์" },
   { id: 1, name: "wip2", lastname: "t", confirm: "ยืนยันสิทธ์" },
@@ -42,41 +47,63 @@ export default class Previous extends React.Component {
   state = {}
   render() {
     return (
-      <Bg1 className="container-fulid">
-        <div className="row">
-          <div className="col"></div>
-          <div className="col-8">
-            <H1>เอาหล่ะ ... มาลุ้นกัน !!!</H1>
-            <table className="table table-hover thead-light">
-              {
-                Name.map((data, i) =>
-                  <tbody>
-                    <tr>
-                      <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
-                      <td>{data.name}</td>
-                      <td>{data.lastname}</td>
-                    </tr>
-                  </tbody>
-                )
-              } 
-            </table>
-            {/* <table className="table table-hover table-dark">
-                <tbody>
-                  <tr>
-                    <th scope="col">ยืนยันสิทธิ์</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                </tbody>
-              </table> */}
-          </div>
-          <div className="col"></div>
-        </div>
+      // <Bg1 className="container-fulid">
+      //   <div className="row">
+      //     <div className="col"></div>
+      //     <div className="col-8">
+            
+      //       <table className="table table-hover thead-light">
+      //         {
+      //           Name.map((data, i) =>
+      //             <tbody>
+      //               <tr>
+      //                 <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
+      //                 <td>{data.name}</td>
+      //                 <td>{data.lastname}</td>
+      //               </tr>
+      //             </tbody>
+      //           )
+      //         } 
+      //       </table>
+      //       {/* <table className="table table-hover table-dark">
+      //           <tbody>
+      //             <tr>
+      //               <th scope="col">ยืนยันสิทธิ์</th>
+      //               <td>Mark</td>
+      //               <td>Otto</td>
+      //               <td>@mdo</td>
+      //             </tr>
+      //           </tbody>
+      //         </table> */}
+      //     </div>
+      //     <div className="col"></div>
+      //   </div>
       
-      </Bg1>
+      // </Bg1>
 
+      // <Bg1>
+      //   <div></div>
+      // </Bg1>
 
+      <Bg2>
+        <div className="row d-flex justify-content-center">
+          <div className="col-8 ">  
+            <table className="table table-hover thead-light">
+               {
+                 Name.map((data, i) =>
+                   <tbody>
+                     <tr>
+                       <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
+                       <td>{data.name}</td>
+                       <td>{data.lastname}</td>
+                     </tr>
+                   </tbody>
+                 )
+               } 
+           </table>
+          </div>  
+        </div>
+      </Bg2>
     )
   }
 }
