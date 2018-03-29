@@ -25,7 +25,7 @@ export default class Introduce extends React.Component {
     render() {
         return (
             <Bg className="container-fulid d-flex justify-content-center align-items-center">
-                <Box className="ml-5" text="YOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!"></Box>
+                <Box className="ml-5" text="YOOOOOOOOOOOOOOOOO"></Box>
                 <Img src="/static/img/todfire.png" className="" />
                 <Img2 src="/static/img/todfire1.png" />
             </Bg>

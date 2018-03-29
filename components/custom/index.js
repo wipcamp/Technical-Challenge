@@ -24,8 +24,8 @@ const Img2 = styled.img`
 
 const Ball = styled.div`
     height: 30vh;
-    width: 10vw;
-    background-color: #000;
+    width: 50vw;
+    background-color: #fff;
     position: absolute;
     z-index: 0;
     border-radius: 20px;
