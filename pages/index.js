@@ -1,7 +1,6 @@
 import React from 'react'
 import Custom from '../components/custom/index'
-import Introduce from '../components/custom/introduce'
-import Previous from '../components/custom/previous'
+import Linktoannouce from '../components/custom/linktoannouce'
 import styled from 'styled-components'
 
 const Bg = styled.body`
@@ -17,9 +16,8 @@ export default class Index extends React.Component {
       <div>
         <Bg>
         <Custom />
-        <Introduce/>
+        {/* <Linktoannouce/> */}
         </Bg>
-        <Previous/>
       </div>
     )
   }
