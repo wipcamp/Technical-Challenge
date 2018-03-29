@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Bg from '../custom/Bg'
+// import Box from '../custom/Box'
 
 const Sec = styled.div`
   height: 40vh;
