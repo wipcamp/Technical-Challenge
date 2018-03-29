@@ -41,7 +41,7 @@ const Background = () => (
     <Bg>
         <BgLeft src='/static/img/Bgleft.png'/>
         <BgRight src='/static/img/BgRight.png'/>
-        <BgCenter src='/static/img/BgCenter.png'/>
+        <BgCenter src='/static/img/open.png'/>
     </Bg>
 )
 export default Background
