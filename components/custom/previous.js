@@ -8,20 +8,15 @@ const H1 = styled.h1`
     color:#fff;
 `
 const P = styled.p`
-color:white;
+    color:#fff;
 `
 
-const Bg1 = styled(Bg)`
-  height:130vh;
-  color:white;
-  background-color:#000;
-`
 const Bg2 = styled.div`
-  height: 100vh;
   background-color: #171611;
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height:150vh;
 `
 const BgLeft = styled.img`
 
@@ -29,6 +24,14 @@ const BgLeft = styled.img`
 const Div = styled.div`
   position: relative;
   z-index: 3;
+`
+
+const Link = styled.a`
+    color:white;
+    &:hover{
+      color:#0f0;
+      text-decoration-line: none
+    }
 `
 
 const Name = [
@@ -58,62 +61,27 @@ export default class Previous extends React.Component {
   state = {}
   render() {
     return (
-      // <Bg1 className="container-fulid">
-      //   <div className="row">
-      //     <div className="col"></div>
-      //     <div className="col-8">
-            
-      //       <table className="table table-hover thead-light">
-      //         {
-      //           Name.map((data, i) =>
-      //             <tbody>
-      //               <tr>
-      //                 <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
-      //                 <td>{data.name}</td>
-      //                 <td>{data.lastname}</td>
-      //               </tr>
-      //             </tbody>
-      //           )
-      //         } 
-      //       </table>
-      //       {/* <table className="table table-hover table-dark">
-      //           <tbody>
-      //             <tr>
-      //               <th scope="col">ยืนยันสิทธิ์</th>
-      //               <td>Mark</td>
-      //               <td>Otto</td>
-      //               <td>@mdo</td>
-      //             </tr>
-      //           </tbody>
-      //         </table> */}
-      //     </div>
-      //     <div className="col"></div>
-      //   </div>
-      
-      // </Bg1>
-
-      // <Bg1>
-      //   <div></div>
-      // </Bg1>
-
-      <Bg2>
+      <Bg2 className="container-fulid">
         <Background/>
         <Div className="row d-flex justify-content-center">
+          <div className="col"></div>
           <div className="col-8 ">  
+            <H1>เอาหล่ะ ... มาลุ้นกัน</H1>
             <table className="table table-hover thead-light">
                {
                  Name.map((data, i) =>
                    <tbody>
                      <tr>
-                       <th scope="col"><a href='https://itim.wip.camp' target="_blank">{data.confirm}</a></th>
-                       <td>{data.name}</td>
-                       <td>{data.lastname}</td>
+                       <th scope="col"><Link href='https://itim.wip.camp' target="_blank">{data.confirm}</Link></th>
+                       <td><P>{data.name}</P></td>
+                       <td><P>{data.lastname}</P></td>
                      </tr>
                    </tbody>
                  )
                } 
            </table>
           </div>  
+          <div className="col"></div>
         </Div>
       </Bg2>
     )
