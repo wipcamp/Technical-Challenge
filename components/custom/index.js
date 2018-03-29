@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Bg from '../custom/Bg'
 // import Box from '../custom/Box'
-import Light from '../custom/Light'
 
 const Img = styled.img`
   width: 30%;
@@ -19,7 +18,6 @@ const Img2 = styled.img`
   position: absolute;
   right: 0;
   z-index: 1;
-  animation: ${Light} 10s infinite;
 `
 
 const Ball = styled.div`
