@@ -16,7 +16,7 @@ export default class Index extends React.Component {
       <div>
         <Bg>
         <Custom />
-        {/* <Linktoannouce/> */}
+        <Linktoannouce/>
         </Bg>
       </div>
     )

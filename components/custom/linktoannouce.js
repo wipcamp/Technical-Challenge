@@ -51,8 +51,7 @@ export default class Introduce extends React.Component {
                  <div className="text-center">
                     <Box id='Box' onClick={openBox} src='/static/img/box.svg'/>
                     <Font>กดที่ฉันสิออเจ้า</Font>
-                </div>
-                
+                </div>    
             </Background>
         )
     }
