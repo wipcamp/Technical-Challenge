@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Bg from '../custom/Bg'
 import Tada from '../custom/animate/Tada'
 import Pulse from '../custom/animate/pulse'
 
-const Background = Bg.extend`
-    background-image: url('/static/img/bg2.png');
+const Background = styled.div`
+    position: relative;
+    height: 100vh;
 `
 const Box = styled.img`
     position: relative;
@@ -38,22 +38,21 @@ const Font = styled.div`
     text-align: center;
     color: white;
 `
-const Div =styled.div`
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left:50%;
-`
+
+const openBox = () => {document.getElementById('Box').src = '../../static/img/openBox.png'
+                       document.getElementById('Box').style.animation = 'none'
+                       document.getElementById('Box').style.width = '25vw'}
 
 export default class Introduce extends React.Component {
     state = {}
     render() {
-        return (
-            <Background>
-                <Div>
-                    <Box src='/static/img/box.svg'/>
+        return (    
+            <Background className="d-flex justify-content-center align-items-center">
+                 <div className="text-center">
+                    <Box id='Box' onClick={openBox} src='/static/img/box.svg'/>
                     <Font>กดที่ฉันสิออเจ้า</Font>
-                </Div>
+                </div>
+                
             </Background>
         )
     }

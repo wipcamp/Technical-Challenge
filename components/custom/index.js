@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Bg from '../custom/Bg'
-// import Box from '../custom/Box'
 
 const Sec = styled.div`
   height: 40vh;
@@ -47,7 +45,7 @@ export default class Custom extends React.Component {
   state = {}
   render() {
     return (
-      <Bg className="container d-flex justify-content-center">
+      <div className="container d-flex justify-content-center">
         <div className="row d-flex justify-content-center">
           <Sec className="row mt-5">
             <div className="col-7 d-flex align-items-center justify-content-center">
@@ -66,7 +64,7 @@ export default class Custom extends React.Component {
             </div>
           </Sec>
         </div>
-      </Bg>
+      </div>
     )
   }
 }
