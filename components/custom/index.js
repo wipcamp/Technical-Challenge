@@ -8,16 +8,10 @@ const Sec = styled.div`
   width: 70vw;
   background-color: white;
   overflow : hidden;
+  
   ${props => props.other && `
     margin-top: -7%;
   `}
-  @media (max-width: 720px) {
-    height: 10vh;
-    width: 70vw;
-    ${props => props.other && `
-      margin-top: -75%;
-    `}
-  }
 `
 
 const ImgY = styled.img`
@@ -25,15 +19,13 @@ const ImgY = styled.img`
   margin-top: -30vh;
   @media (max-width: 720px) {
     margin-top: -50%;
-    // height: 10vh;
-    // width: 70vw;
   }
 `
 
 const Box = styled.div`
   width: 100%;
   height: 50%;
-  background-color: black;
+  background-color: #FCB933;
 `
 const ImgL = styled.img`
   width: 100%;
@@ -49,9 +41,9 @@ export default class Custom extends React.Component {
     return (
       <Bg className="container d-flex justify-content-center">
         <div className="row d-flex justify-content-center">
-          <Sec className="row mt-5">
+          <Sec className="row mt-5 rounded-top">
             <div className="col-7 d-flex align-items-center justify-content-center">
-              <Box></Box>
+              <Box className="rounded"></Box>
             </div>
             <div className="col-5">
               <ImgY src="/static/img/todfire.png"/>
@@ -62,7 +54,7 @@ export default class Custom extends React.Component {
               <ImgL src="/static/img/hanufire.png"/>
             </div>
             <div className="col-7 d-flex align-items-center justify-content-center">
-              <Box></Box>
+              <Box className="rounded"></Box>
             </div>
           </Sec>
         </div>
