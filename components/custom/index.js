@@ -32,7 +32,22 @@ const ImgY = styled.img`
   }
 `
 
-const Box = styled.div`
+const BoxY = styled.div`
+  width: 100%;
+  height: 50%;
+  background-color: #5D985C;
+`
+const SelectorY = styled.div`
+  border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #5D985C;
+`
+const SelectorL = styled.div`
+  border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #FCB933;
+`
+const BoxL = styled.div`
   width: 100%;
   height: 50%;
   background-color: #FCB933;
@@ -61,7 +76,8 @@ export default class Custom extends React.Component {
           <Div className="rounded">
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <BoxY className="rounded"></BoxY>
+                <SelectorY/>
               </div>
               <div className="col-5">
                 <ImgY src="/static/img/todfire.png"/>
@@ -72,12 +88,14 @@ export default class Custom extends React.Component {
                 <ImgL src="/static/img/hanufire.png"/>
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <SelectorL/>
+                <BoxL className="rounded"></BoxL>
               </div>
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <BoxY className="rounded"></BoxY>
+                <SelectorY/>
               </div>
               <div className="col-5">
                 <ImgY src="/static/img/todfire.png"/>
@@ -88,12 +106,14 @@ export default class Custom extends React.Component {
                 <ImgL src="/static/img/hanufire.png"/>
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <SelectorL/>
+                <BoxL className="rounded"></BoxL>
               </div>
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <BoxY className="rounded"></BoxY>
+                <SelectorY/>
               </div>
               <div className="col-5">
                 <ImgY src="/static/img/todfire.png"/>
@@ -104,7 +124,8 @@ export default class Custom extends React.Component {
                 <ImgL src="/static/img/hanufire.png"/>
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <Box className="rounded"></Box>
+                <SelectorL/>
+                <BoxL className="rounded"></BoxL>
               </div>
             </Sec>
           </Div>
