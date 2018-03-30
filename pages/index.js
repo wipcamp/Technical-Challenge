@@ -4,7 +4,7 @@ import Linktoannouce from '../components/custom/linktoannouce'
 import styled from 'styled-components'
 
 const Bg = styled.body`
-  background-image: url('../static/img/bg2.png');
+  background-image: url('../static/img/bg.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -16,7 +16,7 @@ export default class Index extends React.Component {
       <div>
         <Bg>
         <Custom />
-        {/* <Linktoannouce/> */}
+        <Linktoannouce/>
         </Bg>
       </div>
     )
