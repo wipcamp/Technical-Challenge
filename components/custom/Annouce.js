@@ -21,18 +21,39 @@ z-index:5;
   position: absolute;
   pointer-events: none;
   background: radial-gradient(
-    circle 10vmax at ${props => props.cursorX + ' ' + props.cursorY},
+    circle 15vmax at ${props => props.cursorX + ' ' + props.cursorY},
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
   )
+
 }
+  @media(min-width:320px){
+    background: radial-gradient(
+      circle 50vmax at ${props => props.cursorX + ' ' + props.cursorY},
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,.5) 80%,
+      rgba(0,0,0,.95) 100%
+    )
+  }
+  @media(min-width:576px){
+  width: 150vw;
+  margin-left:-25%;
+  }
+  @media(min-width:768px){
+  width: 120vw;
+  margin-left:-10%;
+  }
+  @media(min-width:1024px){
+  width: 100vw;
+  margin-left:0%;
+  }
 `
 
 export default class App extends React.Component {
 state = {
-  x: '90%',
-  y: '10%',
+  x: '50%',
+  y: '60%',
   node: null
 }
 
@@ -63,7 +84,7 @@ render() {
         onTouchMove={this.update}
         innerRef={this.loadRef}
       >
-      <Bg></Bg>
+      <Bg/>
       </MouseFlashlight>
     </Bg1>
   )

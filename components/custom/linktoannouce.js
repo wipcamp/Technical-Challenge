@@ -62,7 +62,6 @@ export default class Introduce extends React.Component {
                             <a><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
                         </Link>
                     </div>
-                    
                     <Font>กดที่ฉันสิออเจ้า</Font>
                 </div>
             </Background>
