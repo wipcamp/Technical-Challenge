@@ -32,6 +32,11 @@ const Box = styled.img`
 `
 
 const Font = styled.div`
+    @font-face {
+        font-family: 'Pridi';
+        src: url('/static/font/Pridi-Light.ttf');
+    }
+    font-family: 'Pridi';
     position: relative;
     top: 10px;
     font-size: 3em;
