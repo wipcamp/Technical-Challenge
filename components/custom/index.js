@@ -61,7 +61,7 @@ const ImgL = styled.img`
 const Div = styled.div`
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: #ffffcc;
   padding : 10px;
   margin-top: 20px;
   
