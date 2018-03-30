@@ -2,8 +2,9 @@ import react from 'react'
 import styled from 'styled-components'
 
 const Bg = styled.body`
-    background-color: #3F382A;
     height: 100vh;
+    width:100vw;
+    
 `
 const BgBottom = styled.img`
     position: absolute;
@@ -30,7 +31,8 @@ const Background = () => (
     <Bg>
         <BgLeft src="../../static/img/Bgleft.png"/>
         <BgRight src="../../static/img/BgRight.png"/>
-        <BgBottom src="../../static/img/openBox.png"/>
+        <BgBottom src="../../static/img/open.png"/> 
+        
     </Bg>
 )   
 

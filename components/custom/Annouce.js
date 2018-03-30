@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import Bg from '../custom/Background'
 
+const Bg1 = styled.div`
+  overflow-x:hidden;
+  overflow-y:hidden;
+` 
 const MouseFlashlight = styled.div`
-
 cursor: none;
 /* --cursorX: 50%;
 --cursorY: 50%; */
 position: relative;
 display: inline-block;
+z-index:5;
 &:before {
   content: '';
   display: block;
@@ -16,7 +21,7 @@ display: inline-block;
   position: absolute;
   pointer-events: none;
   background: radial-gradient(
-    circle 80px at ${props => props.cursorX + ' ' + props.cursorY},
+    circle 10vmax at ${props => props.cursorX + ' ' + props.cursorY},
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
@@ -24,10 +29,10 @@ display: inline-block;
 }
 `
 
-class App extends React.Component {
+export default class App extends React.Component {
 state = {
-  x: '50%',
-  y: '50%',
+  x: '90%',
+  y: '10%',
   node: null
 }
 
@@ -50,7 +55,7 @@ loadRef = (node) => {
 render() {
   const { x, y } = this.state
   return (
-    <div>
+    <Bg1>
       <MouseFlashlight
         cursorX={x}
         cursorY={y}
@@ -58,11 +63,9 @@ render() {
         onTouchMove={this.update}
         innerRef={this.loadRef}
       >
-        <img style={{width: '800px'}} src='https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg' />
+      <Bg></Bg>
       </MouseFlashlight>
-    </div>
+    </Bg1>
   )
 }
 }
-
-export default App
