@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link'
 import Tada from '../custom/animate/Tada'
 import Pulse from '../custom/animate/pulse'
 
@@ -32,6 +33,11 @@ const Box = styled.img`
 `
 
 const Font = styled.div`
+    @font-face {
+        font-family: 'Pridi';
+        src: url('/static/font/Pridi-Light.ttf');
+    }
+    font-family: 'Pridi';
     position: relative;
     top: 10px;
     font-size: 3em;
@@ -39,19 +45,26 @@ const Font = styled.div`
     color: white;
 `
 
-const openBox = () => {document.getElementById('Box').src = '../../static/img/openBox.png'
-                       document.getElementById('Box').style.animation = 'none'
-                       document.getElementById('Box').style.width = '25vw'}
+const openBox = () => {
+    document.getElementById('Box').src = '../../static/img/openBox.png'
+    document.getElementById('Box').style.animation = 'none'
+    document.getElementById('Box').style.width = '25vw'
+}
 
 export default class Introduce extends React.Component {
     state = {}
     render() {
-        return (    
+        return (
             <Background className="d-flex justify-content-center align-items-center">
-                 <div className="text-center">
-                    <Box id='Box' onClick={openBox} src='/static/img/box.svg'/>
+                <div className="text-center">
+                    <div>
+                        <Link href="/test">
+                            <a><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
+                        </Link>
+                    </div>
+                    
                     <Font>กดที่ฉันสิออเจ้า</Font>
-                </div>    
+                </div>
             </Background>
         )
     }

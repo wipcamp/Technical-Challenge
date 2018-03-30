@@ -21,6 +21,18 @@ const Sec = styled.div`
   
 `
 
+const Text = styled.p`
+  @font-face {
+    font-family: 'Pridi';
+    src: url('/static/font/Pridi-Light.ttf');
+  }
+  font-family: 'Pridi';
+  color: white;
+  padding-left: 10%;
+  padding-top: 2%;
+  font-size: 1.5em;
+`
+
 const ImgY = styled.img`
   width: 100%;
   margin-top: -22vh;
@@ -76,9 +88,9 @@ export default class Custom extends React.Component {
           <Div className="rounded">
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"></BoxY>
+                <BoxY className="rounded"><Text>สวัสดีค่ะ</Text></BoxY>
                 <SelectorY/>
-              </div>
+                </div>
               <div className="col-5">
                 <ImgY src="/static/img/todfire.png"/>
               </div>
