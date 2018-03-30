@@ -26,28 +26,7 @@ z-index:5;
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
   )
-
 }
-  @media(min-width:320px){
-    background: radial-gradient(
-      circle 50vmax at ${props => props.cursorX + ' ' + props.cursorY},
-      rgba(0,0,0,0) 0%,
-      rgba(0,0,0,.5) 80%,
-      rgba(0,0,0,.95) 100%
-    )
-  }
-  @media(min-width:576px){
-  width: 150vw;
-  margin-left:-25%;
-  }
-  @media(min-width:768px){
-  width: 120vw;
-  margin-left:-10%;
-  }
-  @media(min-width:1024px){
-  width: 100vw;
-  margin-left:0%;
-  }
 `
 
 export default class App extends React.Component {
