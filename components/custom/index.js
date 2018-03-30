@@ -4,10 +4,10 @@ import styled from 'styled-components'
 const Sec = styled.div`
   height: 250px;
   width: 900px;
-  background-color: white;
+  background-color: none;
   overflow : hidden;
   @media (min-width: 320px) {
-    width: 350px;
+    width: 300px;
     height: 100px;
   }
   @media (min-width: 720px) {
@@ -18,12 +18,16 @@ const Sec = styled.div`
     width: 900px;
     height: 250px;
   }
+  
 `
 
 const ImgY = styled.img`
   width: 100%;
-  margin-top: -30vh;
+  margin-top: -22vh;
   @media (max-width: 720px) {
+    margin-top: -40%;
+  }
+  @media (min-width: 1024px) {
     margin-top: -50%;
   }
 `
@@ -40,10 +44,12 @@ const ImgL = styled.img`
   margin-left: %;
 ` 
 const Div = styled.div`
-  // width: 50vw;
-  // height: vh;
   width: 100%;
   height: 100%;
+  background-color: white;
+  padding : 10px;
+  margin-top: 20px;
+  
 `
 
 export default class Custom extends React.Component {
@@ -52,8 +58,8 @@ export default class Custom extends React.Component {
     return (
       <div className="container d-flex justify-content-center">
         <div className="row d-flex justify-content-center">
-          <Div>
-            <Sec className="row mt-5 rounded-top">
+          <Div className="rounded">
+            <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <Box className="rounded"></Box>
               </div>
@@ -69,7 +75,7 @@ export default class Custom extends React.Component {
                 <Box className="rounded"></Box>
               </div>
             </Sec>
-            <Sec className="row rounded-top">
+            <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <Box className="rounded"></Box>
               </div>
@@ -85,7 +91,7 @@ export default class Custom extends React.Component {
                 <Box className="rounded"></Box>
               </div>
             </Sec>
-            <Sec className="row rounded-top">
+            <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <Box className="rounded"></Box>
               </div>
@@ -93,7 +99,7 @@ export default class Custom extends React.Component {
                 <ImgY src="/static/img/todfire.png"/>
               </div>
             </Sec>
-            <Sec other className="row rounded-bottom">
+            <Sec other className="row">
               <div className="col-5">
                 <ImgL src="/static/img/hanufire.png"/>
               </div>
