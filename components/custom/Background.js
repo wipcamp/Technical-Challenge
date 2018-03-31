@@ -1,5 +1,6 @@
 import react from 'react'
 import styled from 'styled-components'
+import Check from './Checkname'
 
 const Bg = styled.body`
     height: 100vh;
@@ -22,7 +23,7 @@ const BgBottom = styled.img`
     }
     @media(min-width:768px){
       width: 120vw;
-      margin-left:0%;
+      margin-left:-10%;
     }
     @media(min-width:1024px){
       width: 100vw;
@@ -39,7 +40,7 @@ const BgLeft = styled.img`
       display:none;
     }
     @media(max-width:768px){
-      display:none;
+
     }
 `
 const BgRight = styled.img `
@@ -52,7 +53,6 @@ const BgRight = styled.img `
       display:none;
     }
     @media(max-width:768px){
-      display:none;
     }
 `
 const H = styled.h1`
@@ -64,6 +64,21 @@ const H = styled.h1`
     }
     font-family: 'Pridi';
     padding-top: 1%;
+    @media(min-width:320px){
+      font-size:1.5em;
+      padding-top: 30%;
+    }
+    @media(min-width:576px){
+      font-size:1.5em;
+      padding-top: 25%;
+    }
+    @media(min-width:768px){
+      font-size:2em;
+    }
+    @media(min-width:1024px){
+      font-size:3em;
+      padding-top: 1%;
+    }
 `
 const P = styled.p`
   font-size:2em;
@@ -73,24 +88,36 @@ const P = styled.p`
     src: url('/static/font/Pridi-Light.ttf');
   }
   font-family: 'Pridi';
+  @media(min-width:320px){
+    font-size:1.5em;
+  }
+  @media(min-width:576px){
+    font-size:1.5em;
+  }
+  @media(min-width:768px){
+    font-size:1.5em;
+  }
+  @media(min-width:1024px){
+    font-size:2em;
+  }
 `
 const Button = styled.button`
     cursor:pointer;
 `
 
-const Background = () => (
+
+export default class Background extends React.Component {
+  render() {
+    return(
     <Bg>
         <BgLeft src="../../static/img/Bgleft.png"/>
         <BgRight src="../../static/img/BgRight.png"/>
         <BgBottom src="../../static/img/open.png"/>        
-          <H>ยินดีด้วย</H> 
-          <P>คุณได้เข้าร่วมกองทัพกับเรา</P>   
           <div className="d-flex justify-content-center align-items-center">
-          <a href="http://wip.camp">
-          <Button type="button" className="btn btn-outline-success text-center">ยืนยันสิทธิ์</Button>
-          </a>
+          <Check/>
           </div>   
     </Bg>
-)   
 
-export default Background ;
+    )
+  }
+} 
