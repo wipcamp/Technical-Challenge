@@ -6,7 +6,9 @@ const Sec = styled.div`
   width: 900px;
   background-color: none;
   overflow : hidden;
+  padding: 10px;
   border: 10px solid black;
+  font-size: 1.5vw;
   @media (min-width: 320px) {
     width: 300px;
     height: 100px;
@@ -31,9 +33,9 @@ const Text = styled.p`
   }
   font-family: 'Pridi';
   color: white;
-  padding-left: 10%;
-  padding-top: 2%;
-  font-size: 1.5em;
+  margin: 0;
+  text-align: justify;
+    text-justify: inter-word;
 `
 
 const ImgY = styled.img`
@@ -50,10 +52,13 @@ const ImgY = styled.img`
 `
 
 const BoxY = styled.div`
-  width: 100%;
-  height: 50%;
+  min-height: 50%;
+  padding: 10px;
+  min-width : 115%;
   background-color: #5D985C;
-  vertical-align: middle;
+  @media(min-width:720px){
+    min-width : 100%;
+  }
 `
 const SelectorY = styled.div`
   border-top: 10px solid transparent;
@@ -66,8 +71,9 @@ const SelectorL = styled.div`
 	border-right: 10px solid #FCB933;
 `
 const BoxL = styled.div`
-  width: 100%;
-  height: 50%;
+  min-height: 50%;
+  padding: 10px;
+  min-width : 100%;
   background-color: #FCB933;
 `
 const ImgL = styled.img`
@@ -110,7 +116,7 @@ export default class Custom extends React.Component {
           <Div className="rounded">
             <Sec id="Top" className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>สวัสดีเจ้าลิง เจ้ารู้ไหมว่าวันนี้เป็นวันอะไร?</Text></BoxY>
+                <BoxY className="rounded d-flex justify-content-center"><Text className="align-middle">สวัสดีเจ้าลิง เจ้ารู้ไหมว่าวันนี้เป็นวันอะไร?</Text></BoxY>
                 <SelectorY/>
                 </div>
               <div className="col-5">
@@ -146,7 +152,7 @@ export default class Custom extends React.Component {
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>เจ้าก็แค่เปิดกล่องดวงใจนั่นดู แล้วกล่องจะบอกทุกสิ่งกับเจ้าเอง</Text></BoxY>
+                <BoxY className="rounded"><Text>เจ้าก็แค่เปิดกล่องดวงใจนั่นดู แล้วกล่องจะบอกทุกสิ่งกับเจ้าเอง แต่เจ้าอย่าลืมเอาคบเพลิงไปด้วยล่ะ มันจะมีประโยชน์ต่อเจ้าเอง</Text></BoxY>
                 <SelectorY/>
               </div>
               <div className="col-5">

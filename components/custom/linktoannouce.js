@@ -39,15 +39,17 @@ const Font = styled.div`
     font-family: 'Pridi';
     position: relative;
     top: 10px;
-    font-size: 3em;
+    font-size: 5vw;
     text-align: center;
     color: white;
+    @media(min-width:720px){
+        font-size: 3vw;
+    }   
 `
 
 const openBox = () => {
     document.getElementById('Box').src = '../../static/img/openBox.png'
     document.getElementById('Box').style.animation = 'none'
-    document.getElementById('Box').style.width = '25vw'
 }
 
 export default class Introduce extends React.Component {
