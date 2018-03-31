@@ -55,52 +55,6 @@ const BgRight = styled.img `
     @media(max-width:768px){
     }
 `
-const H = styled.h1`
-    font-size:3em;
-    text-align: center;
-    @font-face {
-      font-family: 'Pridi';
-      src: url('/static/font/Pridi-Light.ttf');
-    }
-    font-family: 'Pridi';
-    padding-top: 1%;
-    @media(min-width:320px){
-      font-size:1.5em;
-      padding-top: 30%;
-    }
-    @media(min-width:576px){
-      font-size:1.5em;
-      padding-top: 25%;
-    }
-    @media(min-width:768px){
-      font-size:2em;
-    }
-    @media(min-width:1024px){
-      font-size:3em;
-      padding-top: 1%;
-    }
-`
-const P = styled.p`
-  font-size:2em;
-  text-align: center;
-  @font-face {
-    font-family: 'Pridi';
-    src: url('/static/font/Pridi-Light.ttf');
-  }
-  font-family: 'Pridi';
-  @media(min-width:320px){
-    font-size:1.5em;
-  }
-  @media(min-width:576px){
-    font-size:1.5em;
-  }
-  @media(min-width:768px){
-    font-size:1.5em;
-  }
-  @media(min-width:1024px){
-    font-size:2em;
-  }
-`
 const Button = styled.button`
     cursor:pointer;
 `

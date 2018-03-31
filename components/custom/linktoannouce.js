@@ -57,7 +57,7 @@ export default class Introduce extends React.Component {
             <Background className="d-flex justify-content-center align-items-center">
                 <div className="text-center">
                     <div>
-                        <a href='/test' target="_blank"><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
+                        <a href='/annouce' target="_blank"><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
                     </div>
                     <Font>จงเปิดกล่องแล้วเจ้าจะได้รับคำตอบ</Font>
                 </div>

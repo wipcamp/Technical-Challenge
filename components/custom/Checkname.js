@@ -28,7 +28,7 @@ padding-top: 1%;
 }
 `
 const P = styled.p`
-font-size:2em;
+font-size:2vw;
 text-align: center;
 @font-face {
 font-family: 'Pridi';
@@ -82,7 +82,7 @@ export default class CheckName extends React.Component {
         }
         return  (
           <div>
-            <H>เสียใจด้วยนะ</H> 
+          <H>เสียใจด้วยนะ</H> 
           <P>ครั้งหน้าลองใหม่ ...</P> 
           {/* <a href="http://wip.camp">
           <Button type="button" className="btn btn-outline-warning text-center">กลับกน้าหลัก</Button>
