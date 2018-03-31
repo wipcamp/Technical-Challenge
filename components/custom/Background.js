@@ -104,7 +104,33 @@ const P = styled.p`
 const Button = styled.button`
     cursor:pointer;
 `
+const BoxL = styled.div`
+  width: 30%;
+  min-height: 5%;
+  background-color: #fcb933;
+  box-shadow: 0 2px 2px 0 #fff, 0 4px 10px 0 #fff ;
+  position: absolute; 
+  z-index: 2;
+  margin-top: 23%;
+  margin-left: 55%;
+  bottom:10vh;
+  right:5vw;
+  `
+const SelectorL = styled.div`
+  border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #FCB933;
+`
 
+const Span = styled.span`
+@font-face {
+  font-family: 'Pridi';
+  src: url('/static/font/Pridi-Light.ttf');
+  }
+  font-family: 'Pridi';
+  font-size: 18px;
+  color: white;
+`
 
 export default class Background extends React.Component {
   render() {
@@ -113,7 +139,7 @@ export default class Background extends React.Component {
         <BgLeft src="../../static/img/Bgleft.png"/>
         <BgRight src="../../static/img/BgRight.png"/>
         <BgBottom src="../../static/img/open.png"/>
-
+        <BoxL className="rounded text-center pt-1"><Span>เนื่องจากที่แห่งนี้นั้นไร้แสงส่องเข้ามาถึง เจ้าจงใช้คบไฟที่ได้รับมาส่องดูผลสมัครด้วยตนเองเสีย</Span></BoxL>            
           <div className="d-flex justify-content-center align-items-center">
           <Check/>
           </div>   

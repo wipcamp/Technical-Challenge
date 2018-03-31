@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Bg from '../custom/Background'
 
+
 const Bg1 = styled.div`
   overflow-x:hidden;
   overflow-y:hidden;

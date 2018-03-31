@@ -26,6 +26,7 @@ padding-top: 1%;
   font-size:3em;
   padding-top: 1%;
 }
+color: #0D0D0D;
 `
 const P = styled.p`
 font-size:2em;
@@ -50,44 +51,48 @@ font-size:2em;
 `
 const Button = styled.button`
 cursor:pointer;
+text-align: center;
+@font-face {
+font-family: 'Pridi';
+src: url('/static/font/Pridi-Light.ttf');
+}
+font-family: 'Pridi';
 `
 export default class CheckName extends React.Component {
-    state = {
-        user:'',
-        loading:true
-    }
-    componentDidMount = () => {
-      this.setState({
-        user: 'จิว',
-        loading: false
-      })
-    }
+  state = {
+    user: '',
+    loading: true
+  }
+  componentDidMount = () => {
+    this.setState({
+      user: 'wip',
+      loading: false
+    })
+  }
 
-      render () {
-        if (this.state.loading) {
-          return <div>
-            loading .. .
+  render() {
+    if (this.state.loading) {
+      return <div>
+        loading .. .
             </div>
-        }
-        if (wip.indexOf(this.state.user) > -1) {
-          return <div>
-            <H>ยินดีด้วย</H> 
-          <P>คุณได้เข้าร่วมกองทัพกับเรา</P> 
-          <div className="d-flex justify-content-center">
-          <a href="http://wip.camp">
-          <Button type="button" className="btn btn-outline-success text-center">ยืนยันสิทธิ์</Button> 
-          </a>
-          </div>
-          </div>
-        }
-        return  (
-          <div>
-            <H>เสียใจด้วยนะ</H> 
-          <P>ครั้งหน้าลองใหม่ ...</P> 
-          {/* <a href="http://wip.camp">
-          <Button type="button" className="btn btn-outline-warning text-center">กลับกน้าหลัก</Button>
-          </a> */}
-          </div>
-        )
     }
+    if (wip.indexOf(this.state.user) > -1) {
+      return <div className="text-center mt-2">
+        <H>ขอแสดงความยินดีด้วย!</H>
+        <P>คุณได้เข้าร่วมกองทัพกับเรา</P>
+        <a href="http://wip.camp" className="">
+          <Button type="button" className="btn btn-outline-success text-center">ยืนยันสิทธิ์</Button>
+        </a>
+      </div>
+    }
+    return (
+      <div className="text-center mt-2">
+        <H>เสียใจด้วยนะ...</H>
+        <P>ฮึบเข้าไว้! ครั้งหน้าลองใหม่!</P>
+        <a href="http://wip.camp">
+          <Button type="button" className="btn btn-outline-warning text-center">กลับหน้าหลัก</Button>
+        </a>
+      </div>
+    )
+  }
 }
