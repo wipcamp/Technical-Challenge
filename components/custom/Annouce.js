@@ -25,7 +25,7 @@ z-index:5;
     circle 15vmax at ${props => props.cursorX + ' ' + props.cursorY},
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,.5) 80%,
-    rgba(0,0,0,.95) 100%
+    rgba(0,0,0,1) 100%
   )
 }
 `

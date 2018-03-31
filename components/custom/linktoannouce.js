@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'next/link'
 import Tada from '../custom/animate/Tada'
 import Pulse from '../custom/animate/pulse'
 
@@ -58,11 +57,9 @@ export default class Introduce extends React.Component {
             <Background className="d-flex justify-content-center align-items-center">
                 <div className="text-center">
                     <div>
-                        <Link href="/test">
-                            <a><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
-                        </Link>
+                        <a href='/test' target="_blank"><Box id='Box' onClick={openBox} src='/static/img/box.svg' /></a>
                     </div>
-                    <Font>กดที่ฉันสิออเจ้า</Font>
+                    <Font>จงเปิดกล่องแล้วเจ้าจะได้รับคำตอบ</Font>
                 </div>
             </Background>
         )
