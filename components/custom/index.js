@@ -31,7 +31,6 @@ const Text = styled.p`
   }
   font-family: 'Pridi';
   color: white;
-  padding-left: 10%;
   padding-top: 2%;
   font-size: 1.5em;
 `
@@ -54,6 +53,7 @@ const BoxY = styled.div`
   height: 50%;
   background-color: #5D985C;
   vertical-align: middle;
+  text-align:center;
 `
 const SelectorY = styled.div`
   border-top: 10px solid transparent;
@@ -66,6 +66,7 @@ const SelectorL = styled.div`
 	border-right: 10px solid #FCB933;
 `
 const BoxL = styled.div`
+  text-align: center;
   width: 100%;
   height: 50%;
   background-color: #FCB933;
@@ -110,7 +111,7 @@ export default class Custom extends React.Component {
           <Div className="rounded">
             <Sec id="Top" className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>สวัสดีเจ้าลิง เจ้ารู้ไหมว่าวันนี้เป็นวันอะไร?</Text></BoxY>
+                <BoxY className="rounded"><Text>สวัสดีเจ้าลิง เจ้ารู้ไหมว่าวันนี้มีอะไร? ทำไมคนข้างนอกเยอะนัก</Text></BoxY>
                 <SelectorY/>
                 </div>
               <div className="col-5">
@@ -123,12 +124,12 @@ export default class Custom extends React.Component {
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <SelectorL/>
-                <BoxL className="rounded"><Text>วันนี้เป็นวันประกาศผลค่าย Wip Camp ครั้งที่ 10 ใช่ไหมเจ้ายักษ์?</Text></BoxL>
+                <BoxL className="rounded"><Text>วันนี้เป็นวันประกาศผลค่าย Wip Camp ครั้งที่ 10 ไงล่ะ</Text></BoxL>
               </div>
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>ฉลาดมากเจ้าลิง ใช่แล้ววันนี้เป็นวันประกาศรายชื่อของผู้ที่มีสิทธิ์ที่จะมาเข้าร่วมกองทัพกับเรายังไงล่ะ</Text></BoxY>
+                <BoxY className="rounded"><Text>หึ! วันนี้แล้วสินะ งั้นเจ้าหนูที่หลงทางงอยู่ตรงนั้นก็คงเป็นหนึ่งในผู้สมัครล่ะสิ</Text></BoxY>
                 <SelectorY/>
               </div>
               <div className="col-5">
@@ -141,12 +142,12 @@ export default class Custom extends React.Component {
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <SelectorL/>
-                <BoxL className="rounded"><Text>แล้วข้าจะรู้ได้ยังไงล่ะเจ้ายักษ์ ว่ามีใครที่จะมาเข้าร่วมกองทัพกับเราบ้าง?</Text></BoxL>
+                <BoxL className="rounded"><Text>อา... ใช่ แต่ข้างในมันมืดมากเลยนะ แต่เจ้าหนูไม่มีอะไรพกติดตัวมาสักนิด</Text></BoxL>
               </div>
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>เจ้าก็แค่เปิดกล่องดวงใจนั่นดู แล้วกล่องจะบอกทุกสิ่งกับเจ้าเอง</Text></BoxY>
+                <BoxY className="rounded"><Text>อืม... เจ้า! เจ้านั่นแหละ! มารับคบเพลิงของข้าไป เก็บมันไว้ดี ๆ ล่ะ!</Text></BoxY>
                 <SelectorY/>
               </div>
               <div className="col-5">
@@ -159,7 +160,7 @@ export default class Custom extends React.Component {
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <SelectorL/>
-                <BoxL className="rounded"><Text>ขอบใจเจ้ามากเลย ข้าลุ้นจะแย่อยู่แล้วว่าใครกันที่จะมาเข้าร่วมกองทัพกับเราในครั้งนี้</Text></BoxL>
+                <BoxL className="rounded"><Text>รับของข้าไปด้วยสิ แล้วก็ส่วนทางที่ถูกต้องน่ะ เจ้าต้องกดกล่องดวงใจ แล้วสิ่งนั้นจะนำทางเจ้าไปเอง</Text></BoxL>
               </div>
             </Sec>
           </Div>
