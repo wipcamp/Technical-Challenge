@@ -1,5 +1,6 @@
 import react from 'react'
 import styled from 'styled-components'
+import Check from './Checkname'
 
 const Bg = styled.body`
     height: 100vh;
@@ -112,15 +113,8 @@ export default class Background extends React.Component {
         <BgLeft src="../../static/img/Bgleft.png"/>
         <BgRight src="../../static/img/BgRight.png"/>
         <BgBottom src="../../static/img/open.png"/>        
-          <H>ยินดีด้วย</H> 
-          <P>คุณได้เข้าร่วมกองทัพกับเรา</P>  
-          {/* <H>เสียใจด้วยนะ</H> 
-          <P>ครั้งหน้าลองใหม่ ...</P>  */}
           <div className="d-flex justify-content-center align-items-center">
-          <a href="http://wip.camp">
-          <Button type="button" className="btn btn-outline-success text-center">ยืนยันสิทธิ์</Button>
-          {/* <Button type="button" className="btn btn-outline-warning text-center">กลับกน้าหลัก</Button> */}
-          </a>
+          <Check/>
           </div>   
     </Bg>
 
