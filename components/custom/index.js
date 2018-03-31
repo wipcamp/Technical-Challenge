@@ -147,7 +147,7 @@ export default class Custom extends React.Component {
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>อืม... เจ้า! เจ้านั่นแหละ! มารับคบเพลิงของข้าไป เก็บมันไว้ดี ๆ ล่ะ!</Text></BoxY>
+                <BoxY className="rounded"><Text>อืม... เจ้า! เจ้านั่นแหละ! มารับคบเพลิงของพวกข้าไป เก็บมันไว้ดี ๆ ล่ะ!</Text></BoxY>
                 <SelectorY/>
               </div>
               <div className="col-5">
@@ -160,7 +160,7 @@ export default class Custom extends React.Component {
               </div>
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <SelectorL/>
-                <BoxL className="rounded"><Text>รับของข้าไปด้วยสิ แล้วก็ส่วนทางที่ถูกต้องน่ะ เจ้าต้องกดกล่องดวงใจ แล้วสิ่งนั้นจะนำทางเจ้าไปเอง</Text></BoxL>
+                <BoxL className="rounded"><Text>รับของข้าไปด้วยสิ อ๋อ ส่วนทางที่ถูกต้องน่ะ เจ้าต้องกดกล่องดวงใจ แล้วสิ่งนั้นจะนำทางเจ้าไปเอง</Text></BoxL>
               </div>
             </Sec>
           </Div>
