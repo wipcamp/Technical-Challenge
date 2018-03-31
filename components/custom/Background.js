@@ -82,8 +82,11 @@ const Span = styled.span`
   src: url('/static/font/Pridi-Light.ttf');
   }
   font-family: 'Pridi';
-  font-size: 18px;
+  font-size: 4vw;
   color: white;
+  @media(min-width:500px){
+    font-size: 18px;
+  }
 `
 
 export default class Background extends React.Component {
