@@ -29,7 +29,7 @@ padding-top: 1%;
 color: #0D0D0D;
 `
 const P = styled.p`
-font-size:2em;
+font-size:2vw;
 text-align: center;
 @font-face {
 font-family: 'Pridi';
@@ -65,7 +65,7 @@ export default class CheckName extends React.Component {
   }
   componentDidMount = () => {
     this.setState({
-      user: 'wip',
+      user: 'wip1',
       loading: false
     })
   }
