@@ -112,7 +112,8 @@ export default class Background extends React.Component {
     <Bg>
         <BgLeft src="../../static/img/Bgleft.png"/>
         <BgRight src="../../static/img/BgRight.png"/>
-        <BgBottom src="../../static/img/open.png"/>        
+        <BgBottom src="../../static/img/open.png"/>
+
           <div className="d-flex justify-content-center align-items-center">
           <Check/>
           </div>   
