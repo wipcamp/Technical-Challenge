@@ -58,7 +58,7 @@ export default class CheckName extends React.Component {
     }
     componentDidMount = () => {
       this.setState({
-        user: 'mild',
+        user: 'จิว',
         loading: false
       })
     }
@@ -73,18 +73,20 @@ export default class CheckName extends React.Component {
           return <div>
             <H>ยินดีด้วย</H> 
           <P>คุณได้เข้าร่วมกองทัพกับเรา</P> 
+          <div className="d-flex justify-content-center">
           <a href="http://wip.camp">
           <Button type="button" className="btn btn-outline-success text-center">ยืนยันสิทธิ์</Button> 
           </a>
+          </div>
           </div>
         }
         return  (
           <div>
             <H>เสียใจด้วยนะ</H> 
           <P>ครั้งหน้าลองใหม่ ...</P> 
-          <a href="http://wip.camp">
+          {/* <a href="http://wip.camp">
           <Button type="button" className="btn btn-outline-warning text-center">กลับกน้าหลัก</Button>
-          </a>
+          </a> */}
           </div>
         )
     }
