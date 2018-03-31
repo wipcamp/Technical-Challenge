@@ -6,9 +6,11 @@ const Sec = styled.div`
   width: 900px;
   background-color: none;
   overflow : hidden;
+  border: 10px solid black;
   @media (min-width: 320px) {
     width: 300px;
     height: 100px;
+    border: 4px solid black;
   }
   @media (min-width: 720px) {
     width: 600px;
@@ -17,6 +19,7 @@ const Sec = styled.div`
   @media (min-width: 1024px) {
     width: 900px;
     height: 250px;
+    border: 10px solid black;
   }
   
 `
@@ -34,13 +37,15 @@ const Text = styled.p`
 `
 
 const ImgY = styled.img`
-  width: 100%;
-  margin-top: -22vh;
-  @media (max-width: 720px) {
-    margin-top: -40%;
+  width: 120%;
+  margin-top: -4vh;
+  @media (min-width: 720px) {
+    margin-top: -35%;
+
   }
   @media (min-width: 1024px) {
-    margin-top: -50%;
+    margin-top: -30%;
+    width: 100%;
   }
 `
 
@@ -65,18 +70,34 @@ const BoxL = styled.div`
   background-color: #FCB933;
 `
 const ImgL = styled.img`
-  width: 100%;
+  width: 140%;
   float: left;
-  margin-top: -15%;
-  margin-left: %;
+  margin-top: -5%;
+  @media(min-width:320px){
+    margin-left: -20%;
+  }
+  @media(min-width:720px){
+    width: 130%;
+    margin-top: -10%;
+    margin-left: -10%;
+  }
+  @media(min-width:1024px){
+    width: 110%;
+    margin-left: 0%;
+  }
 ` 
 const Div = styled.div`
   width: 100%;
-  height: 100%;
   background-color: #ffffcc;
   padding : 10px;
+  padding-top : 0;
+  padding-bottom: 0;
   margin-top: 20px;
-  
+  border: 10px solid black;
+  border-top : none;
+  @media(min-width:320px){
+    border: 8px solid black;
+  }
 `
 
 export default class Custom extends React.Component {
@@ -86,7 +107,7 @@ export default class Custom extends React.Component {
       <div className="container d-flex justify-content-center">
         <div className="row d-flex justify-content-center">
           <Div className="rounded">
-            <Sec className="row">
+            <Sec id="Top" className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
                 <BoxY className="rounded"><Text>สวัสดีค่ะ</Text></BoxY>
                 <SelectorY/>
@@ -131,7 +152,7 @@ export default class Custom extends React.Component {
                 <ImgY src="/static/img/todfire.png"/>
               </div>
             </Sec>
-            <Sec other className="row">
+            <Sec id="Bottom" other className="row">
               <div className="col-5">
                 <ImgL src="/static/img/hanufire.png"/>
               </div>
