@@ -20,7 +20,6 @@ const Sec = styled.div`
     width: 900px;
     height: 250px;
     border: 10px solid black;
-    font-size: 1.5em;
   }
   
 `
