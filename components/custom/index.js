@@ -34,8 +34,6 @@ const Text = styled.p`
   font-family: 'Pridi';
   color: white;
   margin: 0;
-  text-align: justify;
-    text-justify: inter-word;
 `
 
 const ImgY = styled.img`
@@ -152,7 +150,7 @@ export default class Custom extends React.Component {
             </Sec>
             <Sec className="row">
               <div className="col-7 d-flex align-items-center justify-content-center">
-                <BoxY className="rounded"><Text>เจ้าก็แค่เปิดกล่องดวงใจนั่นดู แล้วกล่องจะบอกทุกสิ่งกับเจ้าเอง แต่เจ้าอย่าลืมเอาคบเพลิงไปด้วยล่ะ มันจะมีประโยชน์ต่อเจ้าเอง</Text></BoxY>
+                <BoxY className="rounded"><Text>เจ้าก็แค่เปิดกล่องดวงใจนั่นดู แล้วกล่องจะบอกทุกสิ่งกับเจ้าเอง แต่เจ้าจะต้องรับคบเพลิงจากข้าไปด้วย มันจะมีประโยชน์ต่อเจ้าเอง</Text></BoxY>
                 <SelectorY/>
               </div>
               <div className="col-5">
